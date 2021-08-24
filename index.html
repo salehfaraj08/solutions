@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registering</title>
+</head>
+<body>
+    <h1>Create an Account</h1>
+    <form action="register.php">
+        <div>
+            <label for="email">Email:</label>
+            <br>
+            <input type="email" name="email" id="email">
+        </div>
+        <br>
+        <div>
+            <label for="password">Password:</label>
+            <br>
+            <input type="password" name="password" id="password" placeholder="enter you password">
+        </div>
+        <br>
+        <div>
+            <label for="age">Age:</label>
+            <br>
+            <input style="width: 6%;" type="number" name="age" id="age" min="18" max="120" placeholder="select age">
+        </div>
+        <br>
+        <div>
+            <label for="messeage">Tell us a little about your self</label>
+            <br>
+            <textarea name="messeage" id="messeage" cols="50" rows="5"></textarea>
+        </div>
+        <br>
+        <div>
+            <input type="checkbox" name="terms" id="terms">
+            <label for="terms">I agree to the <a href="#">terms of service</a></label>
+        </div>
+        <br>
+        <input type="submit" value="Sign up" name="btn" id="btn">
+    </form>
+</body>
+</html>
