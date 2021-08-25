@@ -1,44 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>registering</title>
+    <title>lifeisgood | Welcome</title>
+
+    <link rel="stylesheet" href="cssStyles/style.css">
 </head>
 <body>
-    <h1>Create an Account</h1>
-    <form action="register.php">
-        <div>
-            <label for="email">Email:</label>
-            <br>
-            <input type="email" name="email" id="email">
+    <header>
+        <nav id="navbar">
+            <h1 class="logo"><a href="index.html">Lis</a> </h1>
+            <ul>
+                <li><a class="current" href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="show">
+            <div class="contain">
+                <h1><span class="have">Have</span> A Nice Vacation</h1>
+                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima repellendus aspernatur sequi nobis error suscipit fugiat voluptatum earum esse eaque.</p>
+                <a class="btn" href="about.html">Something about us</a>
+                
+            </div>
         </div>
-        <br>
-        <div>
-            <label for="password">Password:</label>
-            <br>
-            <input type="password" name="password" id="password" placeholder="enter you password">
+    </header>
+
+    <section id="info" class="back-g">
+        <div class="img">
         </div>
-        <br>
-        <div>
-            <label for="age">Age:</label>
-            <br>
-            <input style="width: 6%;" type="number" name="age" id="age" min="18" max="120" placeholder="select age">
+        <div class="content">
+            <h2><span>history of our</span> fascinating hotel</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio atque iusto, repellat itaque provident dolore 
+                esse dignissimos officiis repellendus quisquam quos nisi sint veniam velit
+                 cum ipsum blanditiis ullam natus saepe, quam accusamus, dolores culpa delectus.
+                  Odit rerum, quod est ad inventore nobis earum, eius commodi quasi a, incidunt dignissimos repudiandae minus corporis et maiores cupiditate!
+            </p>
+
+            <a href="about.html" class="btn dark">Read More</a>
         </div>
-        <br>
-        <div>
-            <label for="messeage">Tell us a little about your self</label>
-            <br>
-            <textarea name="messeage" id="messeage" cols="50" rows="5"></textarea>
+    </section>
+    <section id="features">
+        <div class="box back-g">
+            <h3>Great Location</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, adipisci!</p>
         </div>
-        <br>
-        <div>
-            <input type="checkbox" name="terms" id="terms">
-            <label for="terms">I agree to the <a href="#">terms of service</a></label>
+        <div class="box">
+            <h3>Good Meals</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, adipisci!</p>
         </div>
-        <br>
-        <input type="submit" value="Sign up" name="btn" id="btn">
-    </form>
+        <div class="box back-g">
+            <h3>Fitness Rooms</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, adipisci!</p>
+        </div>
+    </section>
+
+    <div class="clr"></div>
+    <footer class="footer">
+        <p>hotel Lfs &copy; 2021, All rights reserved</p>
+    </footer>
+   
+    
 </body>
 </html>
