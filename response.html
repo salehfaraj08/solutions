@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .small p{
+            font-size: 16px;
+        }
+        .medium p{
+            font-size: 24px;
+        }
+        .big p{
+            font-size: 32px;
+        }
+        @media(max-width: 600px){
+        
+            .big p{
+                font-size: 16px;
+            }
+        }
+        @media(min-width: 601px)and(max-width: 800px){
+            .medium p{
+                    font-size: 18px;
+                }
+        }
+        @media(min-width: 801px){
+            .small p{
+                    font-size: 32px;
+                }
+        }
+    </style>
+</head>
+<body>
+    <div class="small">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, magnam.
+        </p>
+    </div>
+    <div class="medium">
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus molestias repudiandae, incidunt sequi praesentium sapiente architecto. Molestias alias nulla maxime sunt obcaecati, amet rerum reiciendis corporis tempora vero ab quasi.
+        </p>
+    </div>
+    <div class="big">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum deleniti atque nulla, mollitia nisi rerum itaque ullam voluptates officia quos, architecto excepturi, nesciunt ex? Voluptas veniam libero quis odio.</p>
+    </div>
+</body>
+</html>
