@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-areas: 
+                'box1 box1 box1 box1'
+                'box2 box3 box3 box4'
+                'box2 box3 box3 box4'
+                'box5 box5 box5 box5'
+                ;
+            
+            height: 50vh;
+            width: 50vw;    
+            
+            margin: auto; 
+            gap: 1.2rem;
+
+
+        }
+        .box{
+            border-radius: 15px;
+            text-align: center;
+            
+        }
+        .box1{
+            background: red;
+            grid-area: box1;
+        }
+        .box2{
+            background: blue;
+           
+            grid-area: box2;
+        }
+        .box3{
+            background: green;
+        
+            grid-area: box3;
+        }
+        .box4{
+            background: purple;
+    
+            grid-area: box4;
+        }
+       
+        .box5{
+            background: yellow;
+
+            grid-area: box5;
+        } 
+
+        /*   @media (max-width:500px) {
+                .container{
+                    grid-template-areas: 
+                    'box1'
+                    'box2'
+                    'box3'
+                    'box4'
+                    'box5';
+                }
+            } */
+
+        
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">Header</div>
+        <div class="box box2">Sidebar</div>
+        <div class="box box3">Content More content than we had before so this column is now quite all </div>
+        <div class="box box4">Sidebar 2</div>
+        <div class="box box5">Footer</div>
+    </div>
+</body>
+</html>
