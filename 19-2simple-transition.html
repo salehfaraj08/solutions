@@ -17,6 +17,7 @@
             height: 300px;
             background: purple;
             position: absolute;
+            
         }
         .one:before{
             content:'';
@@ -24,36 +25,24 @@
             height: 300px;
             background: red;
             position: absolute;
-            transform: translateX(350px);
-          
-            
-        } 
-        .one:after
-        {
-            content:'';
-            position: absolutes;
             top: 0;
             left: 0;
-      
+            transform: translateX(350px);
             
-            
+        } 
+        .one:after{
+            transition: all 1.5s ease-in-out;
         }
-        .one:hover{
-            animation: animate1 5s forwards ease-in-out;
+        
+        .one:hover:after{
+            transform: translateX(350px);
+            background: green;
         }
-          @keyframes animate1{
-             
-            to{
-                top: 0;
-                left: 350px;
-                
-                background-color: green;
-            }
-        }  
+          
     </style>
 </head>
 <body>
-    <div class="one two">
+    <div class="one">
     </div>
 </body>
 </html>
