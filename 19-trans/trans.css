@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.box{
+    position: relative;
+    height: 50px;
+    width: 220px;
+    line-height:50px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 16px;
+    margin: 5rem;
+}
+
+.yeah{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    background: red;
+}
+
+.translate-y:hover .yeah{
+    animation: yeah-anim 3s forwards ease;
+}
+
+@keyframes yeah-anim{
+    to{
+        height: 100%;
+    }
+} 
+
+.translate-x{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    overflow: hidden;
+    background: black;
+    color: white;
+    z-index: -10;
+}
+
+.translate:hover .translate-x{
+    animation: translate-x 3s forwards ease;
+}
+
+@keyframes translate-x{
+    0%{
+        width: 0%;
+        color: black;
+    }
+    100%{
+        width: 100%;
+        color: white;
+    }
+}  
+.translate:hover{
+    animation: translate-text 3s forwards ease;
+}
+
+@keyframes translate-text{
+    0%{
+       
+        color: black;
+    }
+    100%{
+        color: white;
+    }
+}  
+
+.rotate-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
+.scale{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: black; 
+    color: white;
+    opacity: 0;
+}
+
+
+.scaleAndOpacity:hover .scale{
+    animation: scale 3s forwards ease;
+}
+
+@keyframes scale{
+    0%{
+        color: black;
+        scale: (0);
+        opacity: 0;
+        font-size: 40px;
+    }
+    100%{
+        color: white;
+        scale: (1);
+        opacity: 1;
+        font-size: 16px;
+    }
+} 
+
+
